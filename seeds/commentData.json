@@ -1,0 +1,12 @@
+[
+    {
+        "comment_content": "VERY TRUE!",
+        "user_id": 2,
+        "post_id": 1
+    },
+    {
+        "comment_content": "Well said!",
+        "user_id": 1,
+        "post_id": 2
+    }
+]

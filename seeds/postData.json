@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Javascript",
+        "content": "Javascript is the best!",
+        "user_id": 1
+    },
+    {
+        "title": "CSS",
+        "content": "CSS is the best!",
+        "user_id": 2
+    }
+]
