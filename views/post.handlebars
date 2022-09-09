@@ -1,20 +1,9 @@
 <div class="blog-post">
     <div class="post-header">
-        <h2>Why MVC is so important</h2>
-        <h3 class="post-date">Posted by Xandromus on 5/8/2020</h3>
+        <h2>{{title}}</h2>
+        <h3 class="post-date">Posted by {{user.username}} on {{format_date date_created}}</h3>
     </div>
     <div class="post">
-        <p>MVC allows developers to maintain a true separation of concerns, devising their code between the
-            Model Layer for data, the View layer for design, and the Controller layer for application logic.</p>
-    </div>
-</div>
-<div class="blog-post">
-    <div class="post-header">
-        <h2>Authentication vs. Authorization</h2>
-        <h3 class="post-date">Posted by Xandromus on 5/8/2020</h3>
-    </div>
-    <div class="post">
-        <p>There is a difference between authentication and authroization. Authentication means confirming your own
-            identity, whereas authroization means being allowed access to the system.</p>
+        <p>{{content}}</p>
     </div>
 </div>
