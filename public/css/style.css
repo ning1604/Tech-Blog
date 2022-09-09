@@ -112,6 +112,7 @@ body {
     color: white;
     background-color: var(--btn-color);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .login-link, .signup-link {
