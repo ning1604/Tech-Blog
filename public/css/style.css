@@ -91,11 +91,11 @@ body {
 }
 
 /* login styling */
-.login-heading, .signup-heading {
+.login-heading, .signup-heading, .new-post-heading {
     color: var(--primary-color);
 }
 
-.login-form, .signup-form {
+.login-form, .signup-form, .new-post-form {
     font-size: 24px;
 }
 
@@ -111,7 +111,7 @@ body {
     padding-bottom: 5px;
     color: white;
     background-color: var(--btn-color);
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -120,4 +120,43 @@ body {
     color: blue;
     font-size: 20px;
     cursor: pointer;
+}
+
+/* dashboard styling */
+.hidden {
+    display: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-position-btm {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.new-post-btn {
+    font-size: 30px;
+    border: none;
+    padding: 10px 25px;
+    color: white;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.user-post {
+    margin-bottom: 15px;
+}
+
+.user-post button {
+    font-size: 25px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
 }
