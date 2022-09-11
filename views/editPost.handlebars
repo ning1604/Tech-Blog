@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="container-header">
+        <h2 class="new-post-heading">Edit Post</h2>
+    </div>
+    <div class="container-content">
+        <form class="edit-post-form">
+            <div class="form-group">
+                <label for="post-title">Title</label>
+                <input class="form-input" type="text" value="{{title}}" id="post-title" />
+            </div>
+            <div class="form-group">
+                <label for="post-content">Content</label>
+                <textarea class="form-input" id="post-content">{{content}}</textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn" type="submit">Update Post</button>
+            </div>
+            <div class="form-group">
+                <button class="btn" type="button" id="delete-btn">Delete</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/js/editPost.js"></script>

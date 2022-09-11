@@ -72,28 +72,55 @@ router.get("/dashboard", withAuth, async (req, res) => {
     }
 });
 
+router.get("/dashboard/edit/:id", withAuth, async (req, res) => {
+    try {
+        // Find the logged in user based on the session ID
+        if (!req.session.logged_in) {
+            res.redirect("/login");
+        }
+        const postData = await Post.findByPk(req.params.id, {
+            include: [
+                User,
+                {
+                    model: Comment,
+                    include: [User],
+                },
+            ],
+        });
+
+        const post = postData.get({ plain: true });
+
+        res.render('editPost', {
+            ...post,
+            logged_in: req.session.logged_in
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 // gets the selected post
 router.get('/post/:id', async (req, res) => {
     try {
-      const postData = await Post.findByPk(req.params.id, {
-        include: [
-            User,
-            {
-                model: Comment,
-                include: [User],
-            },
-        ],
-      });
-  
-      const post = postData.get({ plain: true });
-  
-      res.render('post', {
-        ...post,
-        logged_in: req.session.logged_in
-      });
+        const postData = await Post.findByPk(req.params.id, {
+            include: [
+                User,
+                {
+                    model: Comment,
+                    include: [User],
+                },
+            ],
+        });
+
+        const post = postData.get({ plain: true });
+
+        res.render('post', {
+            ...post,
+            logged_in: req.session.logged_in
+        });
     } catch (err) {
-      res.status(500).json(err);
+        res.status(500).json(err);
     }
-  });
+});
 
 module.exports = router;

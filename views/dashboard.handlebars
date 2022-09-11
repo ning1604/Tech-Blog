@@ -1,7 +1,7 @@
 <div class="all-post">
     {{#each posts as |post|}}
     <div class="center user-post">
-        <a class="btn">
+        <a href="/dashboard/edit/{{post.id}}" class="btn">
             <div>
                 {{post.title}}
             </div>
