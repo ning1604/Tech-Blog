@@ -77,12 +77,28 @@ body {
     align-items: center;
     padding: 0.7rem 1rem;
     background-color: var(--secondary-color);
+}
+
+.container-header a {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.container-header a:visited, a:active {
     color: var(--post-header-color);
+}
+
+.no-vis {
+    visibility: hidden;
 }
 
 .container-date {
     font-weight: 400;
     font-size: 15px;
+    color: var(--post-header-color);
 }
 
 .container-content {
@@ -153,10 +169,16 @@ body {
     margin-bottom: 15px;
 }
 
-.user-post button {
+.user-post a {
     font-size: 25px;
     width: 90%;
     display: flex;
     justify-content: space-between;
     padding: 15px;
+}
+
+/* post page styling */
+#login-prompt {
+    font-size: 15px;
+    font-weight: 400;
 }

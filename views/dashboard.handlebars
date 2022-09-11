@@ -1,14 +1,14 @@
 <div class="all-post">
     {{#each posts as |post|}}
     <div class="center user-post">
-        <button class="btn">
+        <a class="btn">
             <div>
                 {{post.title}}
             </div>
             <div>
                 {{format_date post.date_created}}
             </div>
-        </button>
+        </a>
     </div>
     {{/each}}
 </div>
@@ -36,3 +36,5 @@
 <div class="center btn-position-btm">
     <button class="new-post-btn">+ New Post</button>
 </div>
+
+<script src="./js/dashboard.js"></script>
