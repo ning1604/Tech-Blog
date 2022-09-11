@@ -1,15 +1,18 @@
 <div class="all-post">
+    {{#each posts as |post|}}
     <div class="center user-post">
         <button class="btn">
             <div>
-                Object-Relational Mapping
+                {{post.title}}
             </div>
             <div>
-                10/9/2022
+                {{format_date post.date_created}}
             </div>
         </button>
     </div>
+    {{/each}}
 </div>
+
 <div class="container hidden">
     <div class="container-header">
         <h2 class="new-post-heading">Create New Post</h2>
