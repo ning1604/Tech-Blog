@@ -154,8 +154,7 @@ body {
 }
 
 .btn-position-btm {
-    position: fixed;
-    bottom: 0;
+    margin-top: 200px;
     width: 100%;
     margin-bottom: 20px;
 }
