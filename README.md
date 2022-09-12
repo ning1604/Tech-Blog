@@ -40,10 +40,11 @@ To run the application, in the terminal run the following command (in directory 
 ```
 npm start
 ```
-
+Tip: <br />
+Refer to userData.json file for username and password to login. <br />
+Database has set minimum password length of 8 characters when signing up. <br />
 ## Screenshots
 The following images shows appearance of application:<br />
-Tip: refer to userData.json file for username and password to login. <br />
 Homepage<br />
 ![image of homepage](./public/images/homepage.png)<br />
 Login page<br />
