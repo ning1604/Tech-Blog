@@ -177,6 +177,10 @@ body {
     padding: 15px;
 }
 
+textarea:focus-visible, input:focus-visible {
+    outline: rgb(0, 98, 255) auto 1px;
+}
+
 /* post page styling */
 #login-prompt {
     font-size: 15px;
