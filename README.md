@@ -3,7 +3,7 @@
 A CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts. This tech blog was buit following MVC paradigm using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.<br />
 
 GitHub repository: https://github.com/ning1604/Tech-Blog <br />
-Deployed application: <br />
+Deployed application: https://arcane-inlet-77522.herokuapp.com/<br />
 
 ## Table of Contents
 - [Installation](#installation)
