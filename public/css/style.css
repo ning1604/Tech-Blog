@@ -27,6 +27,9 @@ input, button, textarea, select {
 }
 
 /* general styling */
+footer {
+    height: 200px;
+}
 
 /* navigation bar */
 a {
@@ -69,6 +72,8 @@ body {
 .container {
     margin: 1rem 3.5rem;
     border: 4px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
 }
 
 .container-header {
@@ -185,4 +190,32 @@ textarea:focus-visible, input:focus-visible {
 #login-prompt {
     font-size: 15px;
     font-weight: 400;
+}
+
+/* page-responsiveness styling */
+@media (max-width: 590px) {
+   .navbar a {
+    padding-left: 0;
+    padding-top: 10px;
+   }
+   .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .nav-heading {
+    margin-left: 0;
+    font-size: 33px;
+   }
+   .container {
+    margin: 1rem;
+   }
+   .container-header, .user-post a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .user-post a div:last-child {
+    font-size: 18px;
+   }
 }
